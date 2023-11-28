@@ -1,0 +1,17 @@
+<!-- Users/templates/Users/purchase_item.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase Item</title>
+</head>
+<body>
+    <p>Current Amount of Coins: {{ coins }}</p>
+    <p>Current Amount of Items: {{ item_count }}</p>
+    <!-- Your other purchase item content -->
+
+    <form method = "post">
+        {% csrf_token %}
+        <button type="submit" name="purchase_button">Purchase Item</button>
+    </form>
+</body>
+</html>

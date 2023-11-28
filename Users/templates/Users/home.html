@@ -1,0 +1,19 @@
+<!-- Users/templates/Users/home.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h2>Hello, {{ username }}</h2>
+    <p>Your coin balance: {{ coin_balance }}</p>
+    <p>Items: {{ item_count }} </p>
+    
+    <!-- Link to purchase item -->
+    <a href="{% url 'purchase_item' %}">Go Shopping</a>
+    
+    <!-- Link to log out -->
+    <a href="{% url 'logout' %}">Log Out</a>
+</body>
+</html>
